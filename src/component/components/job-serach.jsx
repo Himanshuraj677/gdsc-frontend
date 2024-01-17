@@ -16,7 +16,7 @@ const JobSearch = () => {
       console.log("It is valid pincode");
       const query = {"pincode":pincode}
       try {
-        const response = await axios.post("http://192.168.30.119:5000/jobs", query);
+        const response = await axios.post("https://job-detail.onrender.com/jobs", query);
         setJobList(response.data);
       } catch (error) {
         setError(error.message);
