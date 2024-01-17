@@ -29,7 +29,7 @@ const JobForm = () => {
   const postJob = async () => {
     try {
       const response = await axios.post(
-        "http://192.168.30.119:5000/post",
+        "https://job-detail.onrender.com/post",
         formData
       );
       setSuccessMessage("Job posted successfully");
